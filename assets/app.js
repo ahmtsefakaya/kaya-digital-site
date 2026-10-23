@@ -44,7 +44,7 @@ var KD_CONFIG = {
       name: 'Kaya Digital', url: KD_CONFIG.siteUrl + '/' + T.lang + '/',
       email: KD_CONFIG.email, priceRange: '$39 - $450', inLanguage: T.lang,
       description: T.ldDesc || '',
-      areaServed: 'Worldwide',
+      areaServed: 'Worldwide', address: { '@type': 'PostalAddress', addressCountry: 'US' },
       knowsLanguage: ['en', 'es', 'tr']
     });
     d.head.appendChild(ld);
