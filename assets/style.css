@@ -433,6 +433,8 @@ form.kd-form{padding:52px;display:grid;grid-template-columns:1fr 1fr;gap:18px 18
 /* ---------- reveal ---------- */
 .js .rv{opacity:0;transform:translateY(26px);transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:var(--d,0s)}
 .js .rv.in{opacity:1;transform:none}
+/* JS calismazsa bile 3 sn sonra goster */
+.js .rv:not(.in){animation:rvsafe .8s 3s forwards}@keyframes rvsafe{to{opacity:1;transform:none}}
 
 /* ---------- simple pages (privacy, chooser) ---------- */
 .doc{max-width:760px;margin:0 auto;padding:96px 28px 120px}

@@ -86,7 +86,12 @@ var KD_CONFIG = {
     var ro = new IntersectionObserver(function (es) {
       es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); ro.unobserve(e.target); } });
     }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-    rvs.forEach(function (el) { ro.observe(el); });
+    rvs.forEach(function (el) {
+      var r = el.getBoundingClientRect();
+      if (r.top < (window.innerHeight || 800)) el.classList.add('in'); else ro.observe(el);
+    });
+    /* guvenlik agi: gozlemci calismazsa 2.5 sn sonra her seyi goster */
+    setTimeout(function () { rvs.forEach(function (el) { el.classList.add('in'); }); }, 2500);
   } else rvs.forEach(function (el) { el.classList.add('in'); });
 
   /* --- card spotlight + magnetic CTAs (fine pointers only) --- */
