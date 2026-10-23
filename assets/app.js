@@ -44,9 +44,7 @@ var KD_CONFIG = {
       name: 'Kaya Digital', url: KD_CONFIG.siteUrl + '/' + T.lang + '/',
       email: KD_CONFIG.email, priceRange: '$39 - $450', inLanguage: T.lang,
       description: T.ldDesc || '',
-      areaServed: [{ '@type': 'City', name: 'Amarillo', containedInPlace: { '@type': 'State', name: 'Texas' } },
-                   { '@type': 'Place', name: 'Texas Panhandle' }],
-      address: { '@type': 'PostalAddress', addressLocality: 'Amarillo', addressRegion: 'TX', addressCountry: 'US' },
+      areaServed: 'Worldwide',
       knowsLanguage: ['en', 'es', 'tr']
     });
     d.head.appendChild(ld);
