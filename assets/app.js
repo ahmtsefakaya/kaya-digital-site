@@ -44,7 +44,7 @@ var KD_CONFIG = {
       name: 'Kaya Digital', url: KD_CONFIG.siteUrl + '/' + T.lang + '/',
       email: KD_CONFIG.email, priceRange: '$39 - $450', inLanguage: T.lang,
       description: T.ldDesc || '',
-      areaServed: 'Worldwide', address: { '@type': 'PostalAddress', addressCountry: 'US' },
+      areaServed: 'Worldwide', address: { '@type': 'PostalAddress', streetAddress: '13208 Myford Rd #343', addressLocality: 'Tustin', addressRegion: 'CA', postalCode: '92782', addressCountry: 'US' }, legalName: 'KAYA GLOBAL TRANSPORTATION LLC',
       knowsLanguage: ['en', 'es', 'tr']
     });
     d.head.appendChild(ld);
