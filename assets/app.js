@@ -1,10 +1,10 @@
-/* Kaya Digital — shared site script (all languages).
+/* Kaya Global Agency — shared site script (all languages).
    Per-language strings come from window.KD_I18N, defined inline in each page. */
 
 /* ===== ONE place to change the contact e-mail ===== */
 var KD_CONFIG = {
-  email: 'kayagloballlc@gmail.com',          // later: 'hello@kayadigital.net'
-  siteUrl: 'https://kayadigital.net'
+  email: 'kayagloballlc@gmail.com',          // later: 'hello@kayaglobalagency.com'
+  siteUrl: 'https://kayaglobalagency.com'
 };
 
 (function () {
@@ -41,7 +41,7 @@ var KD_CONFIG = {
     ld.type = 'application/ld+json';
     ld.textContent = JSON.stringify({
       '@context': 'https://schema.org', '@type': 'ProfessionalService',
-      name: 'Kaya Digital', url: KD_CONFIG.siteUrl + '/' + T.lang + '/',
+      name: 'Kaya Global Agency', url: KD_CONFIG.siteUrl + '/' + T.lang + '/',
       email: KD_CONFIG.email, priceRange: '$39 - $450', inLanguage: T.lang,
       description: T.ldDesc || '',
       areaServed: 'Worldwide', address: { '@type': 'PostalAddress', streetAddress: '13208 Myford Rd #343', addressLocality: 'Tustin', addressRegion: 'CA', postalCode: '92782', addressCountry: 'US' }, legalName: 'KAYA GLOBAL TRANSPORTATION LLC',
@@ -263,7 +263,7 @@ var KD_CONFIG = {
       if (!form.checkValidity()) { form.reportValidity(); return; }
       var data = {};
       new FormData(form).forEach(function (v, k) { data[k] = v; });
-      data._subject = 'Kaya Digital inquiry (' + (T.lang || 'en').toUpperCase() + ')';
+      data._subject = 'Kaya Global Agency inquiry (' + (T.lang || 'en').toUpperCase() + ')';
       data._template = 'table';
       data._captcha = 'false';
       data.page = location.href.split('#')[0];
