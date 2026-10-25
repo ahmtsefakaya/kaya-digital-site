@@ -3,7 +3,7 @@
 
 /* ===== ONE place to change the contact e-mail ===== */
 var KD_CONFIG = {
-  email: 'kayagloballlc@gmail.com',          // later: 'hello@kayaglobalagency.com'
+  email: 'hello@kayaglobalagency.com',
   siteUrl: 'https://kayaglobalagency.com'
 };
 
