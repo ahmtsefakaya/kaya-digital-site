@@ -36,7 +36,7 @@ var KD_CONFIG = {
   });
 
   /* --- structured data (schema.org) --- */
-  if (T.lang && !d.querySelector('[data-page="privacy"]')) {
+  if (T.lang && !d.getElementById('ld-static') && !d.querySelector('[data-page="privacy"]')) {
     var ld = d.createElement('script');
     ld.type = 'application/ld+json';
     ld.textContent = JSON.stringify({
